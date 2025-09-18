@@ -30,6 +30,7 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  /* To center the ! both horizontally and vertically */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,4 +67,40 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* solution */
+
+.modal  {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+/* Alternatif space (10px) between header and text */
+/* .modal-main   {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+
+.header-btn-wrap    {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.header     {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.text   {
+  margin-bottom: 16px;
 }
